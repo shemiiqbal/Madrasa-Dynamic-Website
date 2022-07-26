@@ -1,0 +1,106 @@
+<!--<section class="vh-100" style="background-color: #9A616D;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="images\PRAYER1.png"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form action="/admin/adminLogin" method="POST">
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                    <span class="h1 fw-bold mb-0">Admin Login</span>
+                  </div>
+
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                    <label class="form-label" name='email' for="form2Example17">Email address</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                    <label class="form-label" name="password" for="form2Example27">Password</label>
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                  </div>
+
+                  <a class="small text-muted" href="#!">Forgot password?</a>
+                   </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+<section class="page-section mt-5" id="login">
+  <div class="row container">
+    <!-- Contact Section Heading-->
+    <div class="col-md-9">
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Admin Login</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Contact Section Form-->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+
+          <form action="/admin/adminLogin" method="POST">
+            <!-- Name input-->
+            {{#if loginErr}}
+            <p class="error">Invalid Email or Password</p>
+            {{/if}}
+            <div class="form-floating mb-3">
+              <input class="form-control" name="email" type="email" placeholder="Enter your name..." />
+              <label for="email">Email</label>
+
+            </div>
+
+            <!-- Password input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" name="password" type="password" placeholder="(123) 456-7890" />
+              <label for="password">Password</label>
+
+            </div>
+
+
+            <!-- Submit Button-->
+            <button class="btn btn-primary btn-xl" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <figure><img src="images/Muslim_kid_4.png" alt="sing up image" style="width:450px;height:450px;"></figure>
+
+</section>
+<style>
+  .button {
+    background-color: #ff7f62;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>

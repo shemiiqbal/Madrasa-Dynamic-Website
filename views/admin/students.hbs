@@ -1,0 +1,65 @@
+<section>
+  <div class="container">
+    <h2 style="margin-top:10rem;">Students Details</h2>
+    <div style="text-align:right;" class="search-container">
+      <input type="text" placeholder="Search..">
+      <button1 type="submit"><i class="fa fa-search" aria-hidden="true"></i></button1>
+
+</section>
+</div>
+<table style="margin-top:50px; margin-bottom:7rem;" id="studentsTable" class="table">
+
+  <th>Number</th>
+  <th>Names:</th>
+  <th>Roll No:</th>
+  <th>Date:</th>
+  <th>Option</th>
+  </tr>
+  {{#each questionnaire}}
+  <tr>
+  <tr>
+    <td></td>
+    <td>{{this.fullname}}</td>
+    <td>{{this.Rollno}}</td>
+    <td>{{this.date}}</td>
+    <td> <a style="background-color: #ff7f62; color:aliceblue;" class="btn btn-button"
+        href="/admin/record/{{this._id}}">View Record</a>
+      <a style="background-color: #719cfe; color:aliceblue;" class="btn btn-button"
+        onclick="return confirm('Do u want to delete {{this.fullname}}?')" href="/admin/delete-Data/{{this._id}}">Delete
+      </a>
+    </td>
+
+
+  </tr>
+  {{/each}}
+</table>
+</div>
+<style>
+  body {
+    counter-reset: Serial;
+    /* Set the Serial counter to 0 */
+  }
+
+  tr td:first-child:before {
+    counter-increment: Serial;
+    /* Increment the Serial counter */
+    content: counter(Serial);
+    /* Display the counter */
+  }
+</style>
+</section>
+
+<script>
+  $(function () {
+    $('#studentsTable').DataTable();
+  });
+
+.search - container.button:hover {
+    background: #ccc;
+
+  }
+.button1{
+    width: 5px;
+    background:
+}
+</script>

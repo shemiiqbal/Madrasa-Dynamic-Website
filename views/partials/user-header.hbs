@@ -1,0 +1,42 @@
+<header>
+    <div id="page-top">
+        <!-- Navigation-->
+        <nav style="background-color:#719cfe" class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Madrasa School</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="pr-5 nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/">Home</a></li>
+                        <li class="pr-5 nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/about">About</a></li>
+                        <li class="pr-5 nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/contact">Contact</a></li>
+                        {{#if user }}
+
+                        <li class="pr-5 nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/logout">Logout</a></li>
+                        <i style=" padding: left 10px;  color:#ff7f62" class="fa-solid fa-user py-3  rounded"></i>
+                        <h5 class=" py-3 px-0 px-lg-3 rounded" style="color:#ff7f62">{{user.username}}</h5>
+
+                        {{else}}
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/login">Login</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="/signup">Register</a></li>
+                        {{/if}}
+
+                        </u>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</header>

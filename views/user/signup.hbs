@@ -1,0 +1,66 @@
+<section class="page-section mt-5" id="signup">
+  <div class="row container">
+    <!-- Contact Section Heading-->
+	<div class="col-md-9">
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Register</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <!-- Contact Section Form-->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+
+        <form action="/signup" method="POST" id="contactForm">
+          <!-- Name input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="name"  name="username" type="text" placeholder="Enter your name..."
+              />
+            <label for="name">User Name</label>
+            
+          </div>
+          <!-- Email address input-->
+
+          <div class="form-floating mb-3">
+            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
+              />
+            <label for="email">Email address</label>
+            
+          </div>
+          <!-- Password input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="password"  name="password" type="password" placeholder="(123) 456-7890"
+              />
+            <label for="password">Password</label>
+        
+          </div>
+          <!-- Submit success message-->
+          
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+              <div class="fw-bolder">Form submission successful!</div>
+              </div>
+          </div>
+          <!-- Submit error message-->
+         
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+          </div>
+          <!-- Submit Button-->
+          <button class=" btn btn-primary btn-xl " type="submit">Register</button>
+       <div class="signup-image">
+                         <a href="/login" class="signup-image-link">I am already a member</a>
+                    </div>
+	   
+	   
+	    </form>
+      </div>
+    </div>
+	</div>
+	<div  class="col-md-3  ">
+			<figure><img src="images/Muslim_kid_3.png" alt="sing up image" style="width:450px;height:500px;"></figure>
+		</div>
+  </div>
+</section>
